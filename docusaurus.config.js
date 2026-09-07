@@ -39,7 +39,6 @@ export default {
       items: [
         {to: academy.en.route, label: academy.en.label, position: 'left'},
         {to: academy.es.route, label: academy.es.label, position: 'left'},
-        {href: 'https://help.tictapcards.com', label: 'Original Help Center', position: 'right'},
       ],
     },
     footer: {
@@ -56,7 +55,6 @@ export default {
           title: 'Links',
           items: [
             {label: 'TicTAP', href: 'https://tictapcards.com'},
-            {label: 'Original Help Center', href: 'https://help.tictapcards.com'},
           ],
         },
       ],

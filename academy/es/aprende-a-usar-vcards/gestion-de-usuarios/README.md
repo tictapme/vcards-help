@@ -1,5 +1,4 @@
 # Gestión de usuarios
-Source: https://help.tictapcards.com/books/gestion-de-usuarios
 ## Pages
 - [Cómo enviar el Wallet a los usuarios](como-enviar-el-wallet-a-los-usuarios.md)
 - [Cómo personalizar tu Wallet ( .pkpass )](como-personalizar-tu-wallet-pkpass.md)

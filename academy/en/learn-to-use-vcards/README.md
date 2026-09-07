@@ -1,5 +1,4 @@
 # EN Academy
-Source: https://help.tictapcards.com/shelves/learn-to-use-vcards
 ## Books
 - [About vcards](about-vcards/README.md)
 - [Card Management](card-management/README.md)

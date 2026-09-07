@@ -70,7 +70,7 @@ def export_shelf(language: str, shelf_slug: str) -> tuple[int, int]:
     books = get_links(shelf_html, book_prefix)
 
     shelf_dir = OUTPUT_ROOT / language / shelf_slug
-    shelf_lines = [f"# {language.upper()} Academy\n", f"Source: {shelf_url}\n", "## Books\n"]
+    shelf_lines = [f"# {language.upper()} Academy\n", "## Books\n"]
     page_count = 0
 
     for book_url in books:
@@ -81,7 +81,7 @@ def export_shelf(language: str, shelf_slug: str) -> tuple[int, int]:
         book_title_match = re.search(r"<title>(.*?)\s+\|", book_html, re.S)
         book_title = html.unescape(book_title_match.group(1).strip()) if book_title_match else book_slug
         book_dir = shelf_dir / book_slug
-        book_lines = [f"# {book_title}\n", f"Source: {book_url}\n", "## Pages\n"]
+        book_lines = [f"# {book_title}\n", "## Pages\n"]
 
         for page_url in pages:
             page_slug = slug_from_url(page_url)

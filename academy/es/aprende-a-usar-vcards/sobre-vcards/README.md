@@ -1,5 +1,4 @@
 # Sobre vcards
-Source: https://help.tictapcards.com/books/sobre-vcards
 ## Pages
 - [¿Qué es vcards?](que-es-vcards.md)
 - [¿Por qué vcards?](por-que-vcards.md)

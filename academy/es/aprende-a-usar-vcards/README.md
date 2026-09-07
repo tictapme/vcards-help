@@ -1,5 +1,4 @@
 # ES Academy
-Source: https://help.tictapcards.com/shelves/aprende-a-usar-vcards
 ## Books
 - [Sobre vcards](sobre-vcards/README.md)
 - [Gestión de tarjetas](gestion-de-tarjetas/README.md)

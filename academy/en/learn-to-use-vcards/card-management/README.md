@@ -1,5 +1,4 @@
 # Card Management
-Source: https://help.tictapcards.com/books/card-management
 ## Pages
 - [Create new cards using databases](create-new-cards-using-databases.md)
 - [Print NFC cards](print-nfc-cards.md)

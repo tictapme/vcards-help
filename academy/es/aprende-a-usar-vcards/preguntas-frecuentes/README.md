@@ -1,5 +1,4 @@
 # Preguntas frecuentes
-Source: https://help.tictapcards.com/books/preguntas-frecuentes
 ## Pages
 - [¿Cómo usar las vcards para incrementar Leads en ferias?](como-usar-las-vcards-para-incrementar-leads-en-ferias.md)
 - [¿Cómo añado mi vcard al escritorio?](como-anado-mi-vcard-al-escritorio.md)

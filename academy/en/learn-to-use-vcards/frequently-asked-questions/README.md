@@ -1,5 +1,4 @@
 # Frequently Asked Quest...
-Source: https://help.tictapcards.com/books/frequently-asked-questions
 ## Pages
 - [Do I need to install an app?](do-i-need-to-install-an-app.md)
 - [How to use vcards to increase leads at fairs](how-to-use-vcards-to-increase-leads-at-fairs.md)

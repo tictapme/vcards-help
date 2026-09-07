@@ -1,5 +1,4 @@
 # Gestión de tarjetas
-Source: https://help.tictapcards.com/books/gestion-de-tarjetas
 ## Pages
 - [Crear nuevas tarjetas usando bases de datos](crear-nuevas-tarjetas-usando-bases-de-datos.md)
 - [Imprimir tarjetas NFC](imprimir-tarjetas-nfc.md)
