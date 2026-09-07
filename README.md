@@ -16,4 +16,4 @@ The public pages were exported using BookStack's Markdown endpoint. `extract_aca
 
 ## Deploy with Cloudflare Pages
 
-Authenticate with `npx wrangler login`, then deploy the production build with `npm run deploy:pages`. The project name and build output directory are configured in `wrangler.jsonc`. Use `npm run deploy:pages:preview` for a preview deployment.
+Authenticate with `npx wrangler login`, then deploy the production build with `npm run deploy:pages`. The Cloudflare Pages project is named `vcards-academy`; its name and build output directory are configured in `wrangler.jsonc`. Use `npm run deploy:pages:preview` for a preview deployment.
