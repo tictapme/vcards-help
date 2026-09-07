@@ -18,6 +18,7 @@ export default {
         routeBasePath: 'en',
         sidebarPath: './sidebars.js',
         showLastUpdateTime: false,
+          breadcrumbs: false,
       },
       blog: false,
       pages: false,
@@ -31,12 +32,18 @@ export default {
       routeBasePath: 'es',
       sidebarPath: './sidebars.js',
       showLastUpdateTime: false,
+          breadcrumbs: false,
     }],
   ],
   themeConfig: {
     navbar: {
-      title: 'TicTAP Help Academy',
+      logo: {
+        alt: 'TicTAP Help Academy',
+        src: 'img/logo.svg',
+        href: academy.es.route,
+      },
       items: [
+        {to: academy.es.route, label: 'TicTAP Help Academy', position: 'left'},
         {to: academy.en.route, label: academy.en.label, position: 'left'},
         {to: academy.es.route, label: academy.es.label, position: 'left'},
       ],

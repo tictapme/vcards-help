@@ -1,6 +1,6 @@
 # Cómo enviar el Wallet a los usuarios
 
-Después de completar la [Configuración de Wallet](/books/gestion-de-usuarios/page/como-personalizar-tu-wallet-pkpass), TicTAP entrega el pase a los usuarios por correo electrónico con la opción "Notify by email" y ellos pueden abrirlo en la app de cartera que coincida con su dispositivo.
+Después de completar la [Configuración de Wallet](/es/gestion-de-usuarios/como-personalizar-tu-wallet-pkpass), TicTAP entrega el pase a los usuarios por correo electrónico con la opción "Notify by email" y ellos pueden abrirlo en la app de cartera que coincida con su dispositivo.
 
 ## Entrega a los usuarios por correo electrónico
 
