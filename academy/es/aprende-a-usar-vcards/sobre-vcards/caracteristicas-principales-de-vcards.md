@@ -11,4 +11,4 @@ Ya sea a través de **correo electrónico**, **mensajería instantánea** o **re
 
 Para más información sobre todas las funcionalidades, consúlta [<span><u>nuestra página web</u></span>](https://vcards.tictap.me/)  <br />   <br />  
 
-![image-7.png](https://help.tictapcards.com/uploads/images/gallery/2024-06/scaled-1680-/6sXWF8JIkAgrOWDl-image-7.png)
+![image-7.png](/uploads/images/gallery/2024-06/scaled-1680-/6sXWF8JIkAgrOWDl-image-7.png)

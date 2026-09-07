@@ -7,4 +7,4 @@ Vcards ofrece diversos **planes especializados** para satisfacer las necesidades
 
 
 
-[![Vcards by TicTAP Business card.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/edoyT5BhjN8CvDdi-vcards-by-tictap-business-card.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/edoyT5BhjN8CvDdi-vcards-by-tictap-business-card.png)
+[![Vcards by TicTAP Business card.png](/uploads/images/gallery/2024-07/scaled-1680-/edoyT5BhjN8CvDdi-vcards-by-tictap-business-card.png)](/uploads/images/gallery/2024-07/edoyT5BhjN8CvDdi-vcards-by-tictap-business-card.png)

@@ -7,14 +7,14 @@ Have you created new vcards and want to send them to all your employees? Or perh
 1. **Access the card list** from the left sidebar menu.
 2. Click on the dropdown button on the right and select **"Notify by mail"**.  <br /> <br />
    
-   [![Group 24784.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/37R2Ix0F5lz88u0C-group-24784.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/37R2Ix0F5lz88u0C-group-24784.png) <br /> <br />
+   [![Group 24784.png](/uploads/images/gallery/2024-07/scaled-1680-/37R2Ix0F5lz88u0C-group-24784.png)](/uploads/images/gallery/2024-07/37R2Ix0F5lz88u0C-group-24784.png) <br /> <br />
 
 > ☝ **Note:** To notify multiple employees at once and speed up the process, select multiple cards simultaneously.
 
 ### What Happens After Email Notification
 
 Once you have selected "Notify by mail," the email associated with the vcards will receive a welcome email with a button to open the vcard.  
-   [![open vcard desktop (1).png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)
+   [![open vcard desktop (1).png](/uploads/images/gallery/2024-07/scaled-1680-/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)](/uploads/images/gallery/2024-07/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)
 
 > ☝ **Note:** We recommend following this process from a mobile device, as it will allow you to save your vcard and access it more easily.
 

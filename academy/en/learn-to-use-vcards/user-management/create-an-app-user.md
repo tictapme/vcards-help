@@ -17,5 +17,5 @@ Tasks to be performed by the team administrator:
 
 The recipient will receive an email with the steps to follow for activating the vcard.
 
-[![Cards (1).png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/YzSmoTt3nbNK2WLu-cards-1.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/YzSmoTt3nbNK2WLu-cards-1.png)  
+[![Cards (1).png](/uploads/images/gallery/2024-07/scaled-1680-/YzSmoTt3nbNK2WLu-cards-1.png)](/uploads/images/gallery/2024-07/YzSmoTt3nbNK2WLu-cards-1.png)  
 <br />

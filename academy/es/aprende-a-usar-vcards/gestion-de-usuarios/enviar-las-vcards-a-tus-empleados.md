@@ -6,13 +6,13 @@
 Estos pasos deben ser seguidos por el administrador del equipo:
 
 1. **Accede al listado de tarjetas** desde el menú lateral izquierdo.
-2. Haz clic en el desplegable del botón de la derecha y selecciona **"Notificar por mail"**. <br /> <br /> [![Group 24784.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/37R2Ix0F5lz88u0C-group-24784.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/37R2Ix0F5lz88u0C-group-24784.png) <br /> <br />
+2. Haz clic en el desplegable del botón de la derecha y selecciona **"Notificar por mail"**. <br /> <br /> [![Group 24784.png](/uploads/images/gallery/2024-07/scaled-1680-/37R2Ix0F5lz88u0C-group-24784.png)](/uploads/images/gallery/2024-07/37R2Ix0F5lz88u0C-group-24784.png) <br /> <br />
 
 > ☝ **Nota:** Para notificar a varios empleados a la vez y agilizar el proceso, selecciona múltiples tarjetas simultáneamente.
  <br /> 
 ### Qué sucede después de notificar por correo electrónico
 
-Una vez hayas seleccionado "Notificar por mail", el correo electrónico asociado a las vcards recibirá un email de bienvenida con un botón para abrir la vcard. [![open vcard desktop (1).png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)
+Una vez hayas seleccionado "Notificar por mail", el correo electrónico asociado a las vcards recibirá un email de bienvenida con un botón para abrir la vcard. [![open vcard desktop (1).png](/uploads/images/gallery/2024-07/scaled-1680-/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)](/uploads/images/gallery/2024-07/rpTZwY24LBlAQWmb-open-vcard-desktop-1.png)
 
 > ☝ **Nota:** Recomendamos seguir este proceso desde un dispositivo móvil, ya que te permitirá guardar tu vcard y acceder a ella más fácilmente.
 

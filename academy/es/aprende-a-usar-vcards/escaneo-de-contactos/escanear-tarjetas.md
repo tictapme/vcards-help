@@ -13,4 +13,4 @@ La función de escaneo de tarjetas Vcard, **potenciada por inteligencia artifici
 6. La información de contacto de la tarjeta se guardará directamente en tu cuenta de Vcard. <br /> <br />
 
 
-[![scancontacts.gif](https://help.tictapcards.com/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)](https://help.tictapcards.com/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)
+[![scancontacts.gif](/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)](/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)

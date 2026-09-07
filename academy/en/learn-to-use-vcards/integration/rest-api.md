@@ -11,11 +11,11 @@ In order to access the API it is required having an accessToken. Once you have a
 
 If you need to try different API calls you can do it from the same Api Docs page, by using the "authorize" button
 
-[![](https://help.tictapcards.com/uploads/images/gallery/2024-09/scaled-1680-/YEeAHVgv2weauofM-image-1727176713256.png)](https://help.tictapcards.com/uploads/images/gallery/2024-09/YEeAHVgv2weauofM-image-1727176713256.png)
+[![](/uploads/images/gallery/2024-09/scaled-1680-/YEeAHVgv2weauofM-image-1727176713256.png)](/uploads/images/gallery/2024-09/YEeAHVgv2weauofM-image-1727176713256.png)
 
 ## List vcards
 
-[![](https://help.tictapcards.com/uploads/images/gallery/2024-09/scaled-1680-/wMeP3tqwwoBxerZk-image-1727176083040.png)](https://help.tictapcards.com/uploads/images/gallery/2024-09/wMeP3tqwwoBxerZk-image-1727176083040.png)
+[![](/uploads/images/gallery/2024-09/scaled-1680-/wMeP3tqwwoBxerZk-image-1727176083040.png)](/uploads/images/gallery/2024-09/wMeP3tqwwoBxerZk-image-1727176083040.png)
 
 Retrieve a paginated list of vcards with optional filtering and search functionality.
 
@@ -39,7 +39,7 @@ The response for this endpoint would contain a paginated list of tags with the a
 
 ## Create a new vcard
 
-[![](https://help.tictapcards.com/uploads/images/gallery/2024-09/scaled-1680-/ilaxYbbqlxS41Xax-image-1727175987281.png)](https://help.tictapcards.com/uploads/images/gallery/2024-09/ilaxYbbqlxS41Xax-image-1727175987281.png)
+[![](/uploads/images/gallery/2024-09/scaled-1680-/ilaxYbbqlxS41Xax-image-1727175987281.png)](/uploads/images/gallery/2024-09/ilaxYbbqlxS41Xax-image-1727175987281.png)
 
 Creates a new vcard in the team.
 
@@ -112,7 +112,7 @@ Creates a new vcard in the team.
 
 ## Show vcard detail
 
-[![](https://help.tictapcards.com/uploads/images/gallery/2024-09/scaled-1680-/QgYJPMvioFsJj4hB-image-1727176254390.png)](https://help.tictapcards.com/uploads/images/gallery/2024-09/QgYJPMvioFsJj4hB-image-1727176254390.png)
+[![](/uploads/images/gallery/2024-09/scaled-1680-/QgYJPMvioFsJj4hB-image-1727176254390.png)](/uploads/images/gallery/2024-09/QgYJPMvioFsJj4hB-image-1727176254390.png)
 
 Retrieves vcard details by the given SKU. The SKU is a unique reference for the vcard.
 
@@ -152,7 +152,7 @@ Retrieves vcard details by the given SKU. The SKU is a unique reference for the 
 
 ## Edit a vcard
 
-[![](https://help.tictapcards.com/uploads/images/gallery/2024-09/scaled-1680-/iJYfU1CoPjyWZlBy-image-1727176197733.png)](https://help.tictapcards.com/uploads/images/gallery/2024-09/iJYfU1CoPjyWZlBy-image-1727176197733.png)
+[![](/uploads/images/gallery/2024-09/scaled-1680-/iJYfU1CoPjyWZlBy-image-1727176197733.png)](/uploads/images/gallery/2024-09/iJYfU1CoPjyWZlBy-image-1727176197733.png)
 
 Updates the details of an existing vcard identified by the SKU.
 
@@ -216,7 +216,7 @@ Updates the details of an existing vcard identified by the SKU.
 
 ## Delete a vcard
 
-[![](https://help.tictapcards.com/uploads/images/gallery/2024-09/scaled-1680-/H7L5bIuFQEoabZ5t-image-1727175952263.png)](https://help.tictapcards.com/uploads/images/gallery/2024-09/H7L5bIuFQEoabZ5t-image-1727175952263.png)
+[![](/uploads/images/gallery/2024-09/scaled-1680-/H7L5bIuFQEoabZ5t-image-1727175952263.png)](/uploads/images/gallery/2024-09/H7L5bIuFQEoabZ5t-image-1727175952263.png)
 
 Deletes a vcard from the team by the given SKU.
 

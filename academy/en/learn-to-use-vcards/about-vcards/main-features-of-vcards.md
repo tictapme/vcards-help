@@ -9,4 +9,4 @@ The platform allows you to create **customized vcards** where you can include lo
 ##### &rarr; Easily Share Your vcards
 Whether through **email**, **instant messaging**, or **social media**, sharing your vcards is quick and straightforward. Moreover, compatibility with multiple devices and operating systems ensures that your contacts can receive and store your information seamlessly. <br /> <br /> 
 
-[![image-7.png](https://help.tictapcards.com/uploads/images/gallery/2024-06/scaled-1680-/6sXWF8JIkAgrOWDl-image-7.png)](https://help.tictapcards.com/uploads/images/gallery/2024-06/6sXWF8JIkAgrOWDl-image-7.png)
+[![image-7.png](/uploads/images/gallery/2024-06/scaled-1680-/6sXWF8JIkAgrOWDl-image-7.png)](/uploads/images/gallery/2024-06/6sXWF8JIkAgrOWDl-image-7.png)

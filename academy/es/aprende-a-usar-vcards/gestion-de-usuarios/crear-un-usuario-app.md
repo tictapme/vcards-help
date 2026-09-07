@@ -17,5 +17,5 @@ Funciones a realizar por el administrador del equipo:
 
 Al destinatario le llegará un correo electrónico con los pasos a seguir para  [<span><u>la activación de la vcard</u></span>](https://help.tictapcards.com/books/gestion-de-usuarios/page/activar-mi-usuario-app) 
 
-[![Cards (1).png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/YzSmoTt3nbNK2WLu-cards-1.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/YzSmoTt3nbNK2WLu-cards-1.png)  
+[![Cards (1).png](/uploads/images/gallery/2024-07/scaled-1680-/YzSmoTt3nbNK2WLu-cards-1.png)](/uploads/images/gallery/2024-07/YzSmoTt3nbNK2WLu-cards-1.png)  
 <br />

@@ -9,4 +9,4 @@ La plataforma asegura que tu información de contacto esté protegida mediante a
 ##### &rarr; Análisis y seguimiento
 Con vcards, puedes **rastrear** quién ha recibido y abierto tus tarjetas de visita virtuales, brindándote información valiosa sobre tus interacciones profesionales. <br /> <br />
 
-[![Vcard-CRM-1-1024x685 1 (1).png](https://help.tictapcards.com/uploads/images/gallery/2024-06/scaled-1680-/F8UaFZK6OgDcg7JZ-vcard-crm-1-1024x685-1-1.png)](https://help.tictapcards.com/uploads/images/gallery/2024-06/F8UaFZK6OgDcg7JZ-vcard-crm-1-1024x685-1-1.png)
+[![Vcard-CRM-1-1024x685 1 (1).png](/uploads/images/gallery/2024-06/scaled-1680-/F8UaFZK6OgDcg7JZ-vcard-crm-1-1024x685-1-1.png)](/uploads/images/gallery/2024-06/F8UaFZK6OgDcg7JZ-vcard-crm-1-1024x685-1-1.png)

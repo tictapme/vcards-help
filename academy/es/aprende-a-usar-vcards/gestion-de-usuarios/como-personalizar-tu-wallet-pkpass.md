@@ -16,7 +16,7 @@ Antes de configurar Wallet, asegúrate de lo siguiente:
 
 Revisa el área de Enterprise Features y confirma que Wallet está activado antes de editar cualquier ajuste del pase.
 
-[![Wallet enabled](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/fjo3eDBomt2wYhQr-image-1783500160683.jpg)](https://help.tictapcards.com/uploads/images/gallery/2026-07/fjo3eDBomt2wYhQr-image-1783500160683.jpg)
+[![Wallet enabled](/uploads/images/gallery/2026-07/scaled-1680-/fjo3eDBomt2wYhQr-image-1783500160683.jpg)](/uploads/images/gallery/2026-07/fjo3eDBomt2wYhQr-image-1783500160683.jpg)
 
 Si Wallet no está activado, la configuración de Enterprise aún no está lista y los ajustes del pase no estarán disponibles.
 
@@ -24,18 +24,18 @@ Si Wallet no está activado, la configuración de Enterprise aún no está lista
 
 Desde la vista de administración de Enterprise, abre la página de ajustes de Wallet.
 
-[![Enterprise Pkpass configuration](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/lymCfGjk0zVa4Dnv-image-1783500375673.jpg)](https://help.tictapcards.com/uploads/images/gallery/2026-07/lymCfGjk0zVa4Dnv-image-1783500375673.jpg)
+[![Enterprise Pkpass configuration](/uploads/images/gallery/2026-07/scaled-1680-/lymCfGjk0zVa4Dnv-image-1783500375673.jpg)](/uploads/images/gallery/2026-07/lymCfGjk0zVa4Dnv-image-1783500375673.jpg)
 
 Esta sección solo es visible cuando la funcionalidad Wallet está activada para el Enterprise actual y tu usuario tiene permiso para editar la configuración de Enterprise. En la mayoría de los casos, llegarás a ella desde el área principal de configuración de Enterprise, donde Wallet aparece como un bloque de configuración dedicado.
 
-[![Pkpass configuration](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/dcCvHKAITlDlII3H-image-1783500506250.jpg)](https://help.tictapcards.com/uploads/images/gallery/2026-07/dcCvHKAITlDlII3H-image-1783500506250.jpg)
+[![Pkpass configuration](/uploads/images/gallery/2026-07/scaled-1680-/dcCvHKAITlDlII3H-image-1783500506250.jpg)](/uploads/images/gallery/2026-07/dcCvHKAITlDlII3H-image-1783500506250.jpg)
 
 
 Abre ese bloque para revisar la configuración actual antes de hacer cambios. Si la sección no aparece, verifica primero el estado de la funcionalidad y tu nivel de acceso.
 
 ## Configurar Wallet
 
-[![Pkpass edition](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/egUzoD4zfNpPueNQ-image-1783500404958.jpg)](https://help.tictapcards.com/uploads/images/gallery/2026-07/egUzoD4zfNpPueNQ-image-1783500404958.jpg)
+[![Pkpass edition](/uploads/images/gallery/2026-07/scaled-1680-/egUzoD4zfNpPueNQ-image-1783500404958.jpg)](/uploads/images/gallery/2026-07/egUzoD4zfNpPueNQ-image-1783500404958.jpg)
 
 ### Información general
 
@@ -71,7 +71,7 @@ Añade las imágenes que usará el pase para que la vista previa y la tarjeta fi
 
 Usa recursos @2x siempre que sea posible para que el resultado se vea nítido en pantallas de alta densidad.
 
-[![Ejemplo de ticket de evento](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/nnFqX7uRDIByhML4-image-1783500432800.png)](https://help.tictapcards.com/uploads/images/gallery/2026-07/nnFqX7uRDIByhML4-image-1783500432800.png)
+[![Ejemplo de ticket de evento](/uploads/images/gallery/2026-07/scaled-1680-/nnFqX7uRDIByhML4-image-1783500432800.png)](/uploads/images/gallery/2026-07/nnFqX7uRDIByhML4-image-1783500432800.png)
 
 El ejemplo `Wallet-layout-example-2x.png` muestra el diseño esperado y las áreas de colocación de los elementos principales del pase.
 

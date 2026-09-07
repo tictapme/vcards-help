@@ -3,7 +3,7 @@
 Yes, you can include a QR code linking to your vcard in your email signature. Follow these steps to do so:
 
 **1. Choose your vcard and download its QR code** in PNG format:
-   [![Group 24569.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/xRewRL0YI3FulC7O-group-24569.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/xRewRL0YI3FulC7O-group-24569.png)
+   [![Group 24569.png](/uploads/images/gallery/2024-07/scaled-1680-/xRewRL0YI3FulC7O-group-24569.png)](/uploads/images/gallery/2024-07/xRewRL0YI3FulC7O-group-24569.png)
 
 **2. Add the QR code to your signature:** Open the signature settings of your email client and insert the QR code image into your signature. Ensure the design is clean and professional.
 

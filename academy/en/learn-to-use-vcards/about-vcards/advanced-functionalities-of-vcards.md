@@ -9,4 +9,4 @@ The platform ensures that your contact information is protected with advanced **
 ##### &rarr; Analytics and Tracking
 With vcards, you can **track** who has received and opened your virtual business cards, providing valuable insights into your professional interactions. <br /> <br />
 
-![Vcard-CRM-1-1024x685 1 (1).png](https://help.tictapcards.com/uploads/images/gallery/2024-06/scaled-1680-/F8UaFZK6OgDcg7JZ-vcard-crm-1-1024x685-1-1.png)
+![Vcard-CRM-1-1024x685 1 (1).png](/uploads/images/gallery/2024-06/scaled-1680-/F8UaFZK6OgDcg7JZ-vcard-crm-1-1024x685-1-1.png)

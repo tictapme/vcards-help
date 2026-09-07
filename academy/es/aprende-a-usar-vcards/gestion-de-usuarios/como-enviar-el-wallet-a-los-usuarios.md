@@ -6,7 +6,7 @@ Después de completar la [Configuración de Wallet](/books/gestion-de-usuarios/p
 
 Una vez configurado el pase, el sistema lo envía por correo electrónico junto con la tarjeta digital de empresa.
 
-[![Entrega por correo electrónico](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/n5p8bNoGFkgv1M95-image-1783500731805.jpg)](https://help.tictapcards.com/uploads/images/gallery/2026-07/n5p8bNoGFkgv1M95-image-1783500731805.jpg)
+[![Entrega por correo electrónico](/uploads/images/gallery/2026-07/scaled-1680-/n5p8bNoGFkgv1M95-image-1783500731805.jpg)](/uploads/images/gallery/2026-07/n5p8bNoGFkgv1M95-image-1783500731805.jpg)
 
 
 
@@ -14,14 +14,14 @@ Una vez configurado el pase, el sistema lo envía por correo electrónico junto 
 
 En iPhone, los usuarios abren una app de correo compatible, tocan el archivo PKPASS adjunto y lo añaden a Apple Wallet.
 
-[![Apple Wallet en iPhone](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/cryt8VbHr48XQjzW-image-1783500750675.jpg)](https://help.tictapcards.com/uploads/images/gallery/2026-07/cryt8VbHr48XQjzW-image-1783500750675.jpg)
+[![Apple Wallet en iPhone](/uploads/images/gallery/2026-07/scaled-1680-/cryt8VbHr48XQjzW-image-1783500750675.jpg)](/uploads/images/gallery/2026-07/cryt8VbHr48XQjzW-image-1783500750675.jpg)
 
 
 ## Compatibilidad con Android
 
 Los archivos PKPASS también se pueden abrir en Android con apps compatibles. La información puede mostrarse correctamente, pero el diseño visual no está garantizado y puede diferir de Apple Wallet.
 
-[![Compatibilidad con Android](https://help.tictapcards.com/uploads/images/gallery/2026-07/scaled-1680-/xjPWe5u1hiVKhMmB-image-1783500770467.jpg)](https://help.tictapcards.com/uploads/images/gallery/2026-07/xjPWe5u1hiVKhMmB-image-1783500770467.jpg)
+[![Compatibilidad con Android](/uploads/images/gallery/2026-07/scaled-1680-/xjPWe5u1hiVKhMmB-image-1783500770467.jpg)](/uploads/images/gallery/2026-07/xjPWe5u1hiVKhMmB-image-1783500770467.jpg)
 
 
 ## Notas importantes

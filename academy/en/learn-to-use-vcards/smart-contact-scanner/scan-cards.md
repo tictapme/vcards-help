@@ -15,4 +15,4 @@ To use this feature, users must **log in to their Vcard account**. The team admi
 5. The contact information from the card will be saved directly to your Vcard account. <br /> <br />
   
 
-[![scancontacts.gif](https://help.tictapcards.com/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)](https://help.tictapcards.com/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)
+[![scancontacts.gif](/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)](/uploads/images/gallery/2024-07/g0jFluCYCe1Un04a-scancontacts.gif)
