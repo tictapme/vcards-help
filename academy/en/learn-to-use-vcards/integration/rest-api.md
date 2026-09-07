@@ -61,7 +61,7 @@ Creates a new vcard in the team.
 
 
 - **sku**: A string representing the SKU (Stock Keeping Unit) used to identify the vcard to be updated.
-- **{ [field-slug]: string }**: A JSON object containing the vcard details. Each of the keys belongs to the slug of the field in the vcard.
+- **\{ [field-slug]: string \}**: A JSON object containing the vcard details. Each of the keys belongs to the slug of the field in the vcard.
 
 ### Request Body:
 - **Media type**: `application/json`

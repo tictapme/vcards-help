@@ -9,5 +9,5 @@ For privacy reasons, it is advisable not to include sensitive information such a
 **Passwords or Access Codes:** Passwords, access codes for online accounts, social media, email services, or other systems should never be included in a vCard. These details are private and should be handled securely and discreetly.
 
 In summary, a vcard should only contain essential contact information necessary for effective and professional communication. Any sensitive or private data should be protected and shared securely and appropriately according to privacy policies and current regulations.
-<br> <br>
-[![image-1720092706803.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/H2DvYeDojerRkhMp-image-1720092706803.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/H2DvYeDojerRkhMp-image-1720092706803.png) <br> <br> <br>
+<br /> <br />
+[![image-1720092706803.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/H2DvYeDojerRkhMp-image-1720092706803.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/H2DvYeDojerRkhMp-image-1720092706803.png) <br /> <br /> <br />

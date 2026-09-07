@@ -5,9 +5,9 @@ Have you created new vcards and want to send them to all your employees? Or perh
 ### Steps to Send vcards via Email
 
 1. **Access the card list** from the left sidebar menu.
-2. Click on the dropdown button on the right and select **"Notify by mail"**.  <br> <br>
+2. Click on the dropdown button on the right and select **"Notify by mail"**.  <br /> <br />
    
-   [![Group 24784.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/37R2Ix0F5lz88u0C-group-24784.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/37R2Ix0F5lz88u0C-group-24784.png) <br> <br>
+   [![Group 24784.png](https://help.tictapcards.com/uploads/images/gallery/2024-07/scaled-1680-/37R2Ix0F5lz88u0C-group-24784.png)](https://help.tictapcards.com/uploads/images/gallery/2024-07/37R2Ix0F5lz88u0C-group-24784.png) <br /> <br />
 
 > ☝ **Note:** To notify multiple employees at once and speed up the process, select multiple cards simultaneously.
 
@@ -20,4 +20,4 @@ Once you have selected "Notify by mail," the email associated with the vcards wi
 
 ### Instructions for Recipients
 
-The recipient should open the vcard from the email and save it to their device's home screen. For more details on how to do this, check our article: [<span style="color: #02A56C; font-weight: bold;"><u>How to add my vcard to the Home Screen?</u></span>](https://help.tictapcards.com/books/frequently-asked-questions/page/how-to-add-my-vcard-to-the-home-screen-of-my-mobile)
+The recipient should open the vcard from the email and save it to their device's home screen. For more details on how to do this, check our article: [<span><u>How to add my vcard to the Home Screen?</u></span>](https://help.tictapcards.com/books/frequently-asked-questions/page/how-to-add-my-vcard-to-the-home-screen-of-my-mobile)

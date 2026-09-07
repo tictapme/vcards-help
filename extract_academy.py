@@ -50,6 +50,11 @@ def slug_from_url(url: str) -> str:
 
 def clean_markdown(markdown: str) -> str:
     markdown = markdown.replace("\r\n", "\n").replace("\r", "\n")
+    markdown = re.sub(r"\sstyle=(?:\"[^\"]*\"|'[^']*')", "", markdown, flags=re.IGNORECASE)
+    markdown = re.sub(r"<img(.*?)(?<!/)>", r"<img\1 />", markdown, flags=re.IGNORECASE)
+    markdown = re.sub(r"<br\s*/?>", "<br />", markdown, flags=re.IGNORECASE)
+    markdown = markdown.replace("{ [field-slug]: string }", "\\{ [field-slug]: string \\}")
+    markdown = re.sub(r"<style\b[^>]*>.*?</style>", "", markdown, flags=re.IGNORECASE | re.DOTALL)
     return markdown.rstrip() + "\n"
 
 
