@@ -18,3 +18,71 @@
   --ifm-color-primary-lighter: #8be0c1;
   --ifm-color-primary-lightest: #bceedd;
 }
+
+/* ── Sidebar menu — tree branches replicando help.tictap.me ── */
+
+/* Categoría activa: pill verde con texto blanco */
+.menu__list-item-collapsible--active {
+  background: var(--ifm-color-primary) !important;
+  border-radius: 16px;
+}
+.menu__list-item-collapsible--active > .menu__link,
+.menu__list-item-collapsible--active > .menu__link:hover {
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+}
+.menu__list-item-collapsible--active > .menu__caret::before {
+  filter: brightness(0) invert(1);
+}
+
+/* Sub-listas anidadas: canalón + recorta el trunk al alto del ul */
+.menu__list .menu__list {
+  /* --tree-gutter: ancho del canalón; --tree-anchor: centro de la 1ª línea del link */
+  --tree-gutter: 18px;
+  --tree-anchor: 15px;
+  --tree-elbow: 11px;
+  padding: 0 0 0 var(--tree-gutter);
+  margin: 4px 0 0 6.4px;
+  /* !important: el <Collapsible> de Docusaurus escribe overflow:visible inline
+     al acabar la animación, y eso dejaría escapar el trunk por encima del ul.
+     Fijarlo a hidden no rompe el desplegable (durante la animación ya usa hidden). */
+  overflow: hidden !important;
+}
+
+/* Cada link hijo se ancla para pintar la rama */
+.menu__list .menu__list .menu__link {
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+/* La rama: trunk vertical "infinito" + codo redondeado abajo-izquierda.
+   El overflow:hidden del ul lo recorta por arriba, así nunca sobrepasa el ul.
+   Se ancla con height (no bottom) para que el codo caiga siempre en la
+   primera línea del link, aunque el texto envuelva a dos líneas. */
+.menu__list .menu__list .menu__link::before {
+  content: '';
+  position: absolute;
+  left: calc(2px - var(--tree-gutter));
+  top: -9999px;
+  height: calc(9999px + var(--tree-anchor));
+  width: var(--tree-elbow);
+  border-left: 1.6px solid var(--ifm-color-primary);
+  border-bottom: 1.6px solid var(--ifm-color-primary);
+  border-bottom-left-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* El punto, al final del codo y centrado en la primera línea */
+.menu__list .menu__list .menu__link::after {
+  content: '';
+  position: absolute;
+  left: calc(2px - var(--tree-gutter) + var(--tree-elbow) - 2.5px);
+  top: var(--tree-anchor);
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+}
