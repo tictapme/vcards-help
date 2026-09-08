@@ -39,13 +39,20 @@ export default {
     navbar: {
       logo: {
         alt: 'TicTAP Help Academy',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
         href: academy.es.route,
       },
       items: [
         {to: academy.es.route, label: 'TicTAP Help Academy', position: 'left'},
-        {to: academy.en.route, label: academy.en.label, position: 'left'},
-        {to: academy.es.route, label: academy.es.label, position: 'left'},
+        {
+          type: 'dropdown',
+          position: 'right',
+          html: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+          items: [
+            {to: academy.en.route, label: academy.en.label},
+            {to: academy.es.route, label: academy.es.label},
+          ],
+        },
       ],
     },
     footer: {

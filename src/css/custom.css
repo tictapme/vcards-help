@@ -19,6 +19,11 @@
   --ifm-color-primary-lightest: #bceedd;
 }
 
+/* ── Navbar — quita la flecha del dropdown de idioma ── */
+.navbar__item.dropdown .navbar__link::after {
+  display: none;
+}
+
 /* ── Sidebar menu — tree branches replicando help.tictap.me ── */
 
 /* Categoría activa: pill verde con texto blanco */
