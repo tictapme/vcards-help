@@ -139,201 +139,53 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
   background: var(--ifm-color-primary);
 }
 
-/* ── Searchbar centrada en el navbar ── */
+/* ── Searchbar centrada en el navbar (temporal para debug) ── */
 .navbar__inner {
   position: relative;
 }
-/* El contenedor izquierdo no debe ser positioning context para que
-   el search pueda posicionarse respecto al navbar__inner */
 .theme-layout-navbar-left,
 .navbar__items:not(.navbar__items--right) {
   position: static !important;
 }
-/* Centramos el contenedor del search */
 [class*="navbarSearchContainer"] {
   position: absolute !important;
   left: 50%;
   transform: translateX(-50%);
   width: 380px !important;
-  max-width: calc(100vw - 280px);
+  min-width: 380px !important;
+  max-width: 380px !important;
   z-index: 1;
 }
-[class*="navbarSearchContainer"]:hover,
-[class*="navbarSearchContainer"]:focus-within {
-  width: 380px !important;
+/* Bloquea cualquier transición/animación de ancho en el árbol del search,
+   incluidos los estados focused/searchIndexLoading que añade el plugin
+   dinámicamente vía React (onMouseEnter/onFocus). */
+[class*="navbarSearchContainer"],
+[class*="navbarSearchContainer"] *,
+[class*="navbarSearchContainer"].focused,
+[class*="navbarSearchContainer"] [class*="focused"],
+[class*="navbarSearchContainer"] [class*="searchIndexLoading"] {
+  transition: none !important;
+  animation: none !important;
 }
-[class*="navbarSearchContainer"] input {
-  border-radius: 20px;
+[class*="searchBarContainer"],
+[class*="searchBarContainer"].focused,
+[class*="searchBarContainer"][class*="focused"] {
   width: 100% !important;
-  box-sizing: border-box;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+[class*="searchBarLeft"] {
+  width: 100% !important;
+  flex: 1 1 auto !important;
+}
+.navbar__search-input,
+.navbar__search-input:focus,
+.navbar__search-input:hover {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
 }
 [class*="searchHintContainer"] {
   display: none !important;
 }
-/* Los items de los extremos se quedan por encima */
-.navbar__items--right {
-  position: relative;
-  z-index: 2;
-}
-.navbar__brand {
-  position: relative;
-  z-index: 2;
-}
 
-/* ── Footer personalizado ── */
-.tictap-footer {
-  background: #0c2828;
-  color: rgba(255,255,255,0.75);
-  font-size: 0.875rem;
-  line-height: 1.6;
-}
-
-.tictap-footer__inner {
-  display: flex;
-  gap: 3rem;
-  padding: 3rem 2rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-/* Left brand column */
-.tictap-footer__brand {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  min-width: 220px;
-  flex: 0 0 auto;
-}
-
-.tictap-footer__logo-wrap {
-  display: inline-block;
-}
-
-.tictap-footer__logo {
-  height: 36px;
-  width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
-}
-
-.tictap-footer__contact {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.tictap-footer__contact li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tictap-footer__contact a,
-.tictap-footer__contact span {
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.tictap-footer__contact a:hover {
-  color: var(--ifm-color-primary-lighter);
-}
-
-.tictap-footer__contact-icon {
-  font-size: 0.9rem;
-  width: 1.2rem;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.tictap-footer__socials {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.tictap-footer__socials a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.tictap-footer__socials a:hover {
-  background: var(--ifm-color-primary);
-  color: #fff;
-}
-
-/* Link columns */
-.tictap-footer__links {
-  display: flex;
-  gap: 3rem;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.tictap-footer__col {
-  min-width: 140px;
-}
-
-.tictap-footer__col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.tictap-footer__col-title {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ifm-color-primary-lighter);
-  margin: 0 0 0.85rem;
-}
-
-.tictap-footer__link {
-  color: rgba(255,255,255,0.7) !important;
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.tictap-footer__link:hover {
-  color: #fff !important;
-  text-decoration: none;
-}
-
-/* Bottom bar */
-.tictap-footer__bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 1rem 2rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.4);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .tictap-footer__inner {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .tictap-footer__links {
-    justify-content: flex-start;
-    gap: 2rem;
-  }
-}
