@@ -11,6 +11,7 @@ export default {
   url: 'https://help.tictapcards.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
+  clientModules: ['./src/modules/logoHref.js'],
   presets: [
     ['classic', {
       docs: {
@@ -21,7 +22,7 @@ export default {
           breadcrumbs: false,
       },
       blog: false,
-      pages: false,
+      pages: {},
       theme: {customCss: './src/css/custom.css'},
     }],
   ],
@@ -34,16 +35,26 @@ export default {
       showLastUpdateTime: false,
           breadcrumbs: false,
     }],
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        docsRouteBasePath: ['/en', '/es'],
+        indexBlog: false,
+        indexPages: false,
+        language: ['en', 'es'],
+      },
+    ],
   ],
   themeConfig: {
     navbar: {
       logo: {
         alt: 'TicTAP Help Academy',
         src: 'img/logo.png',
-        href: academy.es.route,
+        href: '/es/',
       },
       items: [
-        {to: academy.es.route, label: 'TicTAP Help Academy', position: 'left'},
+        {type: 'search', position: 'left'},
         {
           type: 'dropdown',
           position: 'right',

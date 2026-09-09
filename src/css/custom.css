@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
 :root {
   --ifm-color-primary: #02a56c;
   --ifm-color-primary-dark: #028f5d;
@@ -19,12 +21,57 @@
   --ifm-color-primary-lightest: #bceedd;
 }
 
+/* ── Tipografía — Nunito en headings ── */
+h1, h2, h3, h4, h5, h6,
+.navbar__title,
+.menu__link,
+.footer__title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+h1 { font-weight: 800; color: var(--ifm-color-primary); }
+
 /* ── Navbar — quita la flecha del dropdown de idioma ── */
 .navbar__item.dropdown .navbar__link::after {
   display: none;
 }
 
+/* Logo blanco en modo oscuro */
+[data-theme='dark'] .navbar__logo img {
+  filter: brightness(0) invert(1);
+}
+
+/* Flechas del sidebar más pequeñas */
+.menu__caret::before {
+  width: 14px !important;
+  height: 14px !important;
+  background-size: 20px 20px !important;
+}
+
+/* Centra verticalmente el SVG del icono de tierra */
+.navbar__item.dropdown .navbar__link svg {
+  vertical-align: middle;
+  display: block;
+}
+
 /* ── Sidebar menu — tree branches replicando help.tictap.me ── */
+
+/* Pill en todos los links del sidebar con transición suave */
+.menu__link {
+  border-radius: 16px;
+  transition: border-radius 0.2s, background 0.2s;
+}
+.menu__list-item-collapsible {
+  border-radius: 16px;
+  transition: border-radius 0.2s, background 0.2s;
+}
+
+/* El link dentro del collapsible siempre transparente para evitar doble bg */
+.menu__list-item-collapsible > .menu__link,
+.menu__list-item-collapsible > .menu__link:hover {
+  background: transparent !important;
+}
 
 /* Categoría activa: pill verde con texto blanco */
 .menu__list-item-collapsible--active {
@@ -33,7 +80,7 @@
 }
 .menu__list-item-collapsible--active > .menu__link,
 .menu__list-item-collapsible--active > .menu__link:hover {
-  background: transparent;
+  background: transparent !important;
   color: #fff;
   font-weight: 600;
 }
@@ -70,11 +117,11 @@
   content: '';
   position: absolute;
   left: calc(2px - var(--tree-gutter));
-  top: -9999px;
+  top: -9998px;
   height: calc(9999px + var(--tree-anchor));
   width: var(--tree-elbow);
-  border-left: 1.6px solid var(--ifm-color-primary);
-  border-bottom: 1.6px solid var(--ifm-color-primary);
+  border-left: 3px solid var(--ifm-color-primary);
+  border-bottom: 3px solid var(--ifm-color-primary);
   border-bottom-left-radius: 6px;
   box-sizing: border-box;
 }
@@ -86,8 +133,207 @@
   left: calc(2px - var(--tree-gutter) + var(--tree-elbow) - 2.5px);
   top: var(--tree-anchor);
   transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
+  width: 5.5px;
+  height: 5.5px;
   border-radius: 50%;
   background: var(--ifm-color-primary);
+}
+
+/* ── Searchbar centrada en el navbar ── */
+.navbar__inner {
+  position: relative;
+}
+/* El contenedor izquierdo no debe ser positioning context para que
+   el search pueda posicionarse respecto al navbar__inner */
+.theme-layout-navbar-left,
+.navbar__items:not(.navbar__items--right) {
+  position: static !important;
+}
+/* Centramos el contenedor del search */
+[class*="navbarSearchContainer"] {
+  position: absolute !important;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px !important;
+  max-width: calc(100vw - 280px);
+  z-index: 1;
+}
+[class*="navbarSearchContainer"]:hover,
+[class*="navbarSearchContainer"]:focus-within {
+  width: 380px !important;
+}
+[class*="navbarSearchContainer"] input {
+  border-radius: 20px;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+[class*="searchHintContainer"] {
+  display: none !important;
+}
+/* Los items de los extremos se quedan por encima */
+.navbar__items--right {
+  position: relative;
+  z-index: 2;
+}
+.navbar__brand {
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Footer personalizado ── */
+.tictap-footer {
+  background: #0c2828;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.tictap-footer__inner {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Left brand column */
+.tictap-footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 220px;
+  flex: 0 0 auto;
+}
+
+.tictap-footer__logo-wrap {
+  display: inline-block;
+}
+
+.tictap-footer__logo {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.tictap-footer__contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.tictap-footer__contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tictap-footer__contact a,
+.tictap-footer__contact span {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.tictap-footer__contact a:hover {
+  color: var(--ifm-color-primary-lighter);
+}
+
+.tictap-footer__contact-icon {
+  font-size: 0.9rem;
+  width: 1.2rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.tictap-footer__socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.tictap-footer__socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tictap-footer__socials a:hover {
+  background: var(--ifm-color-primary);
+  color: #fff;
+}
+
+/* Link columns */
+.tictap-footer__links {
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.tictap-footer__col {
+  min-width: 140px;
+}
+
+.tictap-footer__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tictap-footer__col-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary-lighter);
+  margin: 0 0 0.85rem;
+}
+
+.tictap-footer__link {
+  color: rgba(255,255,255,0.7) !important;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.tictap-footer__link:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* Bottom bar */
+.tictap-footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .tictap-footer__inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .tictap-footer__links {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
 }
