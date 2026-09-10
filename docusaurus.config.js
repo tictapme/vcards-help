@@ -54,7 +54,7 @@ export default {
         href: '/es/',
       },
       items: [
-        {type: 'search', position: 'left'},
+        {type: 'search', position: 'right'},
         {
           type: 'dropdown',
           position: 'right',

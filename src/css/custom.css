@@ -143,8 +143,7 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
 .navbar__inner {
   position: relative;
 }
-.theme-layout-navbar-left,
-.navbar__items:not(.navbar__items--right) {
+.navbar__items {
   position: static !important;
 }
 [class*="navbarSearchContainer"] {
@@ -187,5 +186,128 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
 }
 [class*="searchHintContainer"] {
   display: none !important;
+}
+
+/* Ocultar "Back to main menu" en el sidebar móvil */
+.navbar-sidebar__back {
+  display: none !important;
+}
+
+/* Ocultar toggle oscuro/claro dentro del sidebar móvil */
+.navbar-sidebar [class*="toggle_"] {
+  display: none !important;
+}
+
+/* ── Responsive navbar: mobile/tablet (hamburger visible) ── */
+@media (max-width: 996px) {
+  /* Revert absolute centering on mobile — icon-only search button */
+  [class*="navbarSearchContainer"] {
+    position: static !important;
+    left: auto;
+    transform: none;
+    width: 36px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    overflow: visible;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Collapse the search bar to just show the SVG icon, centered */
+  [class*="navbarSearchContainer"] [class*="searchBarContainer"] {
+    width: 36px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  [class*="navbarSearchContainer"] [class*="searchBarLeft"] {
+    width: 20px !important;
+    min-width: 20px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Hide the text input completely */
+  [class*="navbarSearchContainer"] .navbar__search-input {
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    opacity: 0;
+    position: absolute;
+  }
+
+  /* Style the SVG search icon as a clickable button */
+  [class*="navbarSearchContainer"] [class*="searchIcon"] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    color: var(--ifm-navbar-link-color);
+  }
+
+  /* When focused/clicked, expand to full-width search overlay */
+  [class*="navbarSearchContainer"]:focus-within {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    z-index: 400;
+    padding: 8px 12px;
+    background: var(--ifm-background-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  [class*="navbarSearchContainer"]:focus-within [class*="searchBarContainer"],
+  [class*="navbarSearchContainer"]:focus-within [class*="searchBarLeft"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  [class*="navbarSearchContainer"]:focus-within .navbar__search-input {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding: 6px 12px 6px 36px !important;
+    border: 1px solid var(--ifm-color-emphasis-300) !important;
+    opacity: 1;
+    position: static;
+    color: inherit !important;
+  }
+  [class*="navbarSearchContainer"]:focus-within .navbar__search-input::placeholder {
+    color: var(--ifm-color-emphasis-500) !important;
+  }
+
+  /* Keep language dropdown and color mode toggle always visible */
+  .navbar__items--right {
+    display: flex !important;
+  }
+  .navbar__items--right > .navbar__item.dropdown,
+  .navbar__items--right > [class*="colorModeToggle"],
+  .navbar__items--right > [class*="toggle"] {
+    display: flex !important;
+  }
+
+  /* Ensure the navbar layout works properly */
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .navbar__items:not(.navbar__items--right) {
+    flex: 0 0 auto !important;
+  }
+  .navbar__items--right {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    gap: 4px;
+  }
 }
 
