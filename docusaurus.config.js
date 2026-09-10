@@ -49,8 +49,9 @@ export default {
   themeConfig: {
     navbar: {
       logo: {
-        alt: 'TicTAP Help Academy',
-        src: 'img/logo.png',
+        alt: 'vcards academy',
+        src: 'img/logo-academy.svg',
+        srcDark: 'img/logo-academy-dark.svg',
         href: '/es/',
       },
       items: [

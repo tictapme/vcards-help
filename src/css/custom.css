@@ -37,9 +37,25 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
   display: none;
 }
 
-/* Logo blanco en modo oscuro */
-[data-theme='dark'] .navbar__logo img {
-  filter: brightness(0) invert(1);
+
+/* Logo: en modo oscuro se sirve img/logo-academy-dark.svg vía srcDark (sin filtros) */
+.navbar__logo {
+  height: 1.9rem;
+}
+.navbar__logo img {
+  height: 100%;
+  width: auto;
+}
+/* En móvil el lockup "vcards academy" es ancho: se reduce para no chocar con los iconos */
+@media (max-width: 700px) {
+  .navbar__logo {
+    height: 1.4rem;
+  }
+}
+@media (max-width: 400px) {
+  .navbar__logo {
+    height: 1.15rem;
+  }
 }
 
 /* Flechas del sidebar más pequeñas */
