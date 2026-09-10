@@ -4,42 +4,18 @@ sidebar_label: Home
 pagination_next: null
 pagination_prev: null
 ---
-
-export const cards = [
-  { title: 'About vcards',               href: 'about-vcards',               icon: '📖', desc: 'What vcards are and how to get started' },
-  { title: 'Card Management',            href: 'card-management',            icon: '💳', desc: 'Create and manage your digital business cards' },
-  { title: 'Template Editing',           href: 'template-editing',           icon: '✏️', desc: 'Customize your card templates and designs' },
-  { title: 'User Management',            href: 'user-management',            icon: '👥', desc: 'Control team access and roles' },
-  { title: 'Brand Management',           href: 'brand-management',           icon: '🏷️', desc: 'Organize and manage your brands' },
-  { title: 'Smart Contact Scanner',      href: 'smart-contact-scanner',      icon: '📷', desc: 'Capture contacts intelligently' },
-  { title: 'Analytics and Reports',      href: 'analytics-and-reports',      icon: '📊', desc: 'Measure your cards performance' },
-  { title: 'Frequently Asked Questions', href: 'frequently-asked-questions', icon: '❓', desc: 'Answers to the most common questions' },
-  { title: 'Integration',                href: 'integration',                icon: '🔗', desc: 'Connect vcards with other tools' },
-];
+import CardGrid from '@site/src/components/CardGrid';
 
 # Academy
 
-<div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(220px,1fr))', gap:'1rem', marginTop:'1.5rem'}}>
-  {cards.map(c => (
-    <a
-      key={c.href}
-      href={c.href}
-      style={{
-        display:'flex', flexDirection:'column', gap:'0.5rem',
-        padding:'1.25rem 1.25rem 1rem',
-        borderRadius:'12px',
-        border:'1px solid var(--ifm-color-emphasis-200)',
-        background:'var(--ifm-background-surface-color)',
-        textDecoration:'none',
-        color:'inherit',
-        transition:'box-shadow 0.15s, transform 0.15s',
-      }}
-      onMouseEnter={e => { e.currentTarget.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)'; e.currentTarget.style.transform='translateY(-2px)'; }}
-      onMouseLeave={e => { e.currentTarget.style.boxShadow='none'; e.currentTarget.style.transform='none'; }}
-    >
-      <span style={{fontSize:'2rem', lineHeight:1}}>{c.icon}</span>
-      <strong style={{color:'var(--ifm-color-primary)', fontSize:'1rem'}}>{c.title}</strong>
-      <span style={{fontSize:'0.85rem', color:'var(--ifm-color-emphasis-700)', lineHeight:1.4}}>{c.desc}</span>
-    </a>
-  ))}
-</div>
+<CardGrid cards={[
+  {href:'about-vcards',               title:'About vcards',               icon:'📖', desc:'What vcards are and how to get started'},
+  {href:'card-management',            title:'Card Management',            icon:'💳', desc:'Create and manage your digital business cards'},
+  {href:'template-editing',           title:'Template Editing',           icon:'✏️', desc:'Customize your card templates and designs'},
+  {href:'user-management',            title:'User Management',            icon:'👥', desc:'Control team access and roles'},
+  {href:'brand-management',           title:'Brand Management',           icon:'🏷️', desc:'Organize and manage your brands'},
+  {href:'smart-contact-scanner',      title:'Smart Contact Scanner',      icon:'📷', desc:'Capture contacts intelligently'},
+  {href:'analytics-and-reports',      title:'Analytics and Reports',      icon:'📊', desc:'Measure your cards performance'},
+  {href:'frequently-asked-questions', title:'Frequently Asked Questions', icon:'❓', desc:'Answers to the most common questions'},
+  {href:'integration',                title:'Integration',                icon:'🔗', desc:'Connect vcards with other tools'},
+]} />
