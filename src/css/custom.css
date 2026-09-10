@@ -155,6 +155,36 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
   background: var(--ifm-color-primary);
 }
 
+/* ── Panel de resultados de búsqueda — look minimalista, a prueba de builds ──
+   La clase real del panel es un CSS-module hasheado (dropdownMenu_xxxx) y el
+   hash cambia en cada build, por eso fijarlo a mano solo funcionaba en un
+   build concreto. Aquí se usan las variables que expone el plugin
+   @easyops-cn/docusaurus-search-local (colores/sombras/alto) + un selector por
+   atributo estable [class*="dropdownMenu"] para los radios que el plugin fija
+   a pelo. Funciona igual en `npm start` y en producción. */
+:root {
+  --search-local-modal-background: var(--ifm-background-surface-color);
+  --search-local-modal-shadow: 0 12px 40px rgba(0, 0, 0, 0.14),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+  --search-local-hit-background: transparent;
+  --search-local-hit-shadow: none;
+  --search-local-hit-height: 46px;
+}
+[data-theme='dark'] {
+  --search-local-modal-shadow: 0 12px 40px rgba(0, 0, 0, 0.6),
+    0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Panel: radio grande + hairline sutil */
+.navbar__search [class*='dropdownMenu'] {
+  border-radius: 16px !important;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+/* Cada resultado: plano, sin caja, con esquinas suaves */
+.navbar__search [class*='dropdownMenu'] [class*='suggestion'] {
+  border-radius: 12px !important;
+}
+
 /* ── Searchbar centrada en el navbar (temporal para debug) ── */
 .navbar__inner {
   position: relative;
