@@ -223,6 +223,15 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
   width: 100% !important;
   flex: 1 1 auto !important;
 }
+/* Causa real del cambio de ancho por estado: al enfocar/hover, autocomplete.js
+   envuelve el input en un <span class="searchBar_xxxx"> con display:inline-block
+   inline, que se encoge al contenido (~239px) en vez de ocupar el contenedor
+   (356px). Forzar ese wrapper raíz a 100% mantiene la barra a ancho fijo en
+   idle, hover, focus y mientras se escribe. El selector [class*="searchBar_"]
+   (con guion bajo) casa solo el wrapper raíz, no searchBarContainer/-Left. */
+.navbar__search [class*="searchBar_"] {
+  width: 100% !important;
+}
 .navbar__search-input,
 .navbar__search-input:focus,
 .navbar__search-input:hover {
@@ -260,41 +269,55 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
     justify-content: center;
   }
 
-  /* Collapse the search bar to just show the SVG icon, centered */
+  /* Collapse the search bar to just show the SVG icon, centered.
+     position:relative + height fijan el contexto para que el input-overlay
+     tocable (más abajo) cubra exactamente el botón de 36px. */
   [class*="navbarSearchContainer"] [class*="searchBarContainer"] {
     width: 36px !important;
     min-width: 36px !important;
     max-width: 36px !important;
+    height: 36px !important;
+    position: relative !important;
     display: flex !important;
     align-items: center;
     justify-content: center;
   }
   [class*="navbarSearchContainer"] [class*="searchBarLeft"] {
-    width: 20px !important;
-    min-width: 20px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    position: static !important;
     display: flex !important;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible !important;
   }
 
-  /* Hide the text input completely */
+  /* En vez de ocultar el input (width:0), lo hacemos invisible pero que cubra
+     todo el botón de 36px como área tocable. El icono real tiene
+     pointer-events:none, así que sin esto en el móvil no hay nada donde tocar
+     para abrir la búsqueda. Al tocarlo se enfoca y :focus-within lo expande. */
   [class*="navbarSearchContainer"] .navbar__search-input {
-    width: 0 !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
     min-width: 0 !important;
-    max-width: 0 !important;
+    max-width: none !important;
+    height: 100% !important;
     padding: 0 !important;
     border: none !important;
+    background: transparent !important;
     opacity: 0;
-    position: absolute;
+    cursor: pointer;
+    z-index: 3;
   }
 
-  /* Style the SVG search icon as a clickable button */
+  /* Icono visible (debajo del input-overlay, no intercepta el toque) */
   [class*="navbarSearchContainer"] [class*="searchIcon"] {
     cursor: pointer;
     width: 20px;
     height: 20px;
     color: var(--ifm-navbar-link-color);
+    z-index: 1;
   }
 
   /* When focused/clicked, expand to full-width search overlay */
@@ -321,10 +344,13 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
+    height: auto !important;
     padding: 6px 12px 6px 36px !important;
     border: 1px solid var(--ifm-color-emphasis-300) !important;
     opacity: 1;
-    position: static;
+    position: static !important;
+    inset: auto !important;
+    z-index: auto;
     color: inherit !important;
   }
   [class*="navbarSearchContainer"]:focus-within .navbar__search-input::placeholder {
@@ -355,5 +381,15 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
     justify-content: flex-end;
     gap: 4px;
   }
+
+  /* Al abrir el menú hamburguesa, el panel debe quedar POR ENCIMA de los
+     iconos de la derecha (buscador, idioma, toggle). El input de búsqueda
+     tiene z-index:3, así que sin esto la lupa se dibuja sobre la X del menú.
+     Con el menú cerrado el panel está fuera de pantalla, así que no molesta. */
+  .navbar-sidebar,
+  .navbar-sidebar__backdrop {
+    z-index: 300 !important;
+  }
+
 }
 
