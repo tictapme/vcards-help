@@ -292,6 +292,20 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
     overflow: visible !important;
   }
 
+  /* Al enfocar/hover, autocomplete.js envuelve el input en un <span
+     class="searchBar_xxxx"> que pasa a ser el offsetParent del input. Como el
+     input es position:absolute está fuera de flujo, así que ese wrapper colapsa
+     a height:0 y el input (inset:0; height:100%) se queda con altura 0 → deja de
+     ser tocable y el buscador no se abre. Forzamos el wrapper a 36×36 relative
+     para que el input vuelva a cubrir el botón. (guion bajo = solo el wrapper
+     raíz, no searchBarContainer/-Left.) */
+  [class*="navbarSearchContainer"] [class*="searchBar_"] {
+    width: 36px !important;
+    height: 36px !important;
+    position: relative !important;
+    display: block !important;
+  }
+
   /* En vez de ocultar el input (width:0), lo hacemos invisible pero que cubra
      todo el botón de 36px como área tocable. El icono real tiene
      pointer-events:none, así que sin esto en el móvil no hay nada donde tocar
@@ -339,6 +353,12 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
+  }
+  /* Al expandir, deshacer el 36×36 del wrapper para que ocupe todo el ancho. */
+  [class*="navbarSearchContainer"]:focus-within [class*="searchBar_"] {
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;
   }
   [class*="navbarSearchContainer"]:focus-within .navbar__search-input {
     width: 100% !important;
