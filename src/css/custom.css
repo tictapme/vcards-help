@@ -334,19 +334,23 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
     z-index: 1;
   }
 
-  /* When focused/clicked, expand to full-width search overlay */
+  /* Al enfocar/tocar: el buscador se despliega como una barra a pantalla
+     completa JUSTO DEBAJO del header (no encima), con el input en forma de
+     pill. La barra usa el fondo del navbar para que parezca una extensión del
+     header. --ifm-background-color es transparent en este sitio, por eso no
+     sirve como fondo del overlay. */
   [class*="navbarSearchContainer"]:focus-within {
     position: fixed !important;
-    top: 0;
+    top: var(--ifm-navbar-height, 60px) !important;
     left: 0;
     right: 0;
     width: 100vw !important;
     min-width: 100vw !important;
     max-width: 100vw !important;
     z-index: 400;
-    padding: 8px 12px;
-    background: var(--ifm-background-color);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 10px 16px;
+    background: var(--ifm-navbar-background-color, #fff);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
   }
   [class*="navbarSearchContainer"]:focus-within [class*="searchBarContainer"],
   [class*="navbarSearchContainer"]:focus-within [class*="searchBarLeft"] {
@@ -365,16 +369,38 @@ h1 { font-weight: 800; color: var(--ifm-color-primary); }
     min-width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    padding: 6px 12px 6px 36px !important;
+    padding: 9px 18px 9px 42px !important;
     border: 1px solid var(--ifm-color-emphasis-300) !important;
+    border-radius: 999px !important;              /* pill */
+    background: var(--ifm-color-emphasis-100, #f1f3f5) !important;
     opacity: 1;
     position: static !important;
     inset: auto !important;
     z-index: auto;
-    color: inherit !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: var(--ifm-font-color-base) !important;
+  }
+  /* Anillo de foco verde (box-shadow sigue el border-radius; outline no). */
+  [class*="navbarSearchContainer"]:focus-within .navbar__search-input:focus {
+    border-color: var(--ifm-color-primary) !important;
+    background: var(--ifm-background-surface-color, #fff) !important;
+    box-shadow: 0 0 0 3px rgba(2,165,108,0.20) !important;
+  }
+  /* Lupa dentro del pill, a la izquierda. */
+  [class*="navbarSearchContainer"]:focus-within [class*="searchIcon"] {
+    left: 16px !important;
+    right: auto !important;
+    width: 18px !important;
+    height: 18px !important;
+    z-index: 1 !important;
   }
   [class*="navbarSearchContainer"]:focus-within .navbar__search-input::placeholder {
     color: var(--ifm-color-emphasis-500) !important;
+  }
+  /* Oculta el <pre> fantasma de autocomplete que asomaba bajo el pill. */
+  [class*="navbarSearchContainer"] .navbar__search pre {
+    display: none !important;
   }
 
   /* Keep language dropdown and color mode toggle always visible */
